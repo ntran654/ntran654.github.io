@@ -8,16 +8,22 @@
 }
 body{
     background-color:#f7f7f7;
-    font-family:"lemonmilk", helvetica, sans-serif;
+    font-family:"centurygothic", helvetica, sans-serif;
     color:#14090b;
     margin:0;
     padding:0;
 }
 p{ 
     padding:50px;
-    font-family:"lemonmilk", helvetica, sans-serif;
+    font-family:"centurygothic", helvetica, sans-serif;
 }
 h1{
+    font-family:"lemonmilk", helvetica, sans-serif;
+}
+h2{
+    font-family:"lemonmilk", helvetica, sans-serif;
+}
+h3{
     font-family:"lemonmilk", helvetica, sans-serif;
 }
 img {
@@ -55,6 +61,7 @@ img {
 
 #about{
     width:230px;
+    font-family:"lemonmilk";
 }
 #songs{
     width:350px;
@@ -75,7 +82,7 @@ img {
     color:#14090b;
 }
 #adventures{
-    font-family:"lemonmilkn", helvetica, sans-serif;
+    font-family:"lemonmilk", helvetica, sans-serif;
     color:#14090b;
 }
 #adp{
@@ -83,10 +90,6 @@ img {
     color:#14090b;
 }
 #facts{
-    font-family:"lemonmilk", helvetica, sans-serif;
-    color:#14090b;
-}
-#hobbies{
     font-family:"lemonmilk", helvetica, sans-serif;
     color:#14090b;
 }
