@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                background-color:#f7f7f7;
+            }
+        </style>
+        <title> Portfolio </title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <ul id="nav">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="portfolio.html"> Portfolio </a></li>
+            <li><a href="about.html"> About Me </a></li>
+            <li><a href="resume.html"> Resume </a></li>
+        </ul>
+        <center>
+        <h1 style="font-family:centurygothic;">WHAT CAN I DO?</h1> 
+        <hr>
+        
+        
+    <h1 style="font-family:centurygothic;"> MY NOTES</h1>
+    <center>
+      <a target="_blank" href="https://drive.google.com/open?id=0B1NqSbY_7wngRTF4WkdkNkc0UVE">
+        <img src="images/me.jpeg" width="30%">
+      </a>
+    </center>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="w3-container">
+  <h1 style="font-family:centurygothic;">MY DESIGNS</h1>
+</div>
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="designs/d19n_front.jpg" style="height:500px">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Division 19 North
+  </div>
+</div>
+
+
+<div class="w3-display-container mySlides">
+  <img src="designs/d26s_f.png" style="height:500px">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Division 26 South
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="designs/db-mhat.jpg" style="height:500px">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    CNH KIWIN'S District Board Gems
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="designs/ruby_front.png" style="height:500px">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    CNH KIWIN'S Ruby Division
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="designs/turqdlt.png" style="height:500px">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    CNH KIWIN'S Turquoise Division
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+    <h1 style="font-family:centurygothic;"> MY VIDEOS</h1>
+    <h1 style="font-family:centurygothic;"> MY PHOTOGRAPHY</h1>
+    </center>
+        
+<center>    
+<section id="photos">
+  <img src="photos/_MG_1408.JPG">
+  <img src="photos/_MG_1542.JPG">
+  <img src="photos/_MG_1857.JPG">
+  <img src="photos/_MG_1958.JPG">
+  <img src="photos/_MG_1971.JPG">
+  <img src="photos/_MG_2029.JPG">
+  <img src="photos/_MG_2102.JPG">
+  <img src="photos/_MG_1975.JPG">
+</section>
+</center>
+
+    
+    </body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        
+    <div class="about">
+        <style>
+            body{
+                background-color:#f7f7f7;
+            }
+            ul{
+                list-style-type:square;
+            }
+        </style>
+        <title>About Me</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <ul id="nav">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="portfolio.html"> Portfolio </a></li>
+            <li><a href="about.html"> About Me </a></li>
+            <li><a href="resume.html"> Resume </a></li>
+        </ul>
+        <center>
+        <h1 id="vroom"> VROOM VROOM HERE COMES NHUNG!</h1>
+        <h3 id="grade"> GRADE 12 </h3>
+        </center>
+        <hr>
+            <img src="images/_MG_1862.JPG" width="100%" height="100%">
+        <p> Hello! My name is Nhung Tran. If you're curious about the pronunciation of my name, it is the sound of a car speeding down a street (nyoom)!
+        <br> I enjoy browsing the internet, digital media, traditional art, and I'm interested in your dog. Currently, I serve as one of the eleven Key Club International Trustees from the CNH KIWIN'S District. 
+        Every day, I am able to challenge my creativity with the work presented to me by my position, and by my surroundings. I have professional experience in graphic design, video production, and I want to improve on my skills in web design. 
+        I want to study Communications or Computer Science in the future, with my ultimate goal being employment at Google!</p>
+        
+        <center>
+        <h3> MY CLASS SCHEDULE</h3>
+        <table>
+            <tr>
+                <th> <b>Period</b> </th>
+                <th> <b>Class</b></th>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> Entrepreneurship and Business Innovation </td>
+            </tr>
+            <tr>
+                <td> 2 </td>
+                <td> AP Computer Science Principles</td>
+            </tr>
+            <tr>
+                <td> 3 </td>
+                <td> AP Literature and Compostition</td>
+            </tr>
+            <tr>
+                <td> 4 </td>
+                <td> AP Psychology </td>
+            </tr>
+            <tr>
+                <td> 5 </td>
+                <td> Health</td>
+            </tr>
+            <tr>
+                <td> 6 </td>
+                <td> AP Calculus BC</td>
+            </tr>
+            <tr>
+                <td> 7</td>
+                <td> Civics and Economics Online</td>
+            </tr>
+        </table>
+        </center>
+        <br>
+        <hr>
+        <center>
+        <h3 id="hobbies"> MY HOBBIES </h3>
+        <ul id="about" style="list-style-type:square">
+            <li> Graphic Design</li>
+            <li> Video Production</li>
+            <li> Drawing</li>
+            <li> Sculpting</li>
+            <li> Painting</li>
+            <li> Writing</li>
+        </ul>
+        <h3 id="favsongs"> FAVORITE SONGS</h3>
+        <left>
+        <ol id="songs">
+            <li>Look - NU'EST </li>
+            <li> DNA - BTS</li>
+            <li> Nothing Holding Me Back - Shawn Mendes</li>
+            <li> Say You Won't Let Go - James Arthur</li>
+        </ol>
+        </left>
+        <h3 id="quote"> MY FAVORITE QUOTE</h3>
+        <blockquote> "Climb the mountain so that you can see the world, not so that the world can see you."</blockquote>
+    </div>
+        </center>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="w3-container">
+  <h2 id="adventures">MY ADVENTURES</h2>
+  <p id="adp">I get to conduct free travels around the world! Here are some of my adventures!</p>
+</div>
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="images/_MG_2092.JPG" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Kiwanis LTG Installation, California
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/_MG_0946.JPG" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Leadership Conference, Indiana
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/_MG_1550.JPG" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Pacific Northwest Summer Board, Washington
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/georgia.JPG" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Georgia Kiwanis DCON, Georgia
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/me.jpeg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    International Convention, Texas
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+    </body>
+</html>

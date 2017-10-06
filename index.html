@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                background-color:#f7f7f7;
+            }
+            #intro{
+                padding:40px;
+            }
+        </style>
+        <title> Nhung Tran </title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <ul id="nav">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="portfolio.html"> Portfolio </a></li>
+            <li><a href="about.html"> About Me </a></li>
+            <li><a href="resume.html"> Resume </a></li>
+        </ul>
+        
+    <figure id="container" onclick="fullScreen(this)">
+  <figure id="slideshow">
+    <img src="images/_MG_2041.JPG">
+    <img src="images/_MG_1468.JPG">
+    <img src="images/_MG_2143.JPG">
+  </figure>
+</figure>  
+
+    <script type="text/javascript">  
+    function cancelFullScreen() {
+    if (document.cancelFullScreen) {
+        document.cancelFullScreen();
+    } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+    } else if (document.webkitCancelFullScreen) {
+        document.webkitCancelFullScreen();
+    } else if (document.msCancelFullScreen) {
+        document.msCancelFullScreen();
+    }
+    link = document.getElementById("container");
+    link.removeAttribute("onclick");
+    link.setAttribute("onclick", "fullScreen(this)");
+}
+
+function fullScreen(element) {
+    if (element.requestFullScreen) {
+        element.requestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen();
+    } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+    }
+    link = document.getElementById("container");
+    link.removeAttribute("onclick");
+    link.setAttribute("onclick", "cancelFullScreen()");
+}
+
+window.onload = function() {
+  imgs = document.getElementById('slideshow').children;
+  interval = 8000;
+  currentPic = 0;
+  imgs[currentPic].style.webkitAnimation = 'fadey '+interval+'ms';
+  imgs[currentPic].style.animation = 'fadey '+interval+'ms';
+  var infiniteLoop = setInterval(function(){
+    imgs[currentPic].removeAttribute('style');
+    if ( currentPic == imgs.length - 1) { currentPic = 0; } else { currentPic++; }
+    imgs[currentPic].style.webkitAnimation = 'fadey '+interval+'ms';
+    imgs[currentPic].style.animation = 'fadey '+interval+'ms';
+  }, interval);
+}    
+    </script>  
+    <hr>
+    <center>
+      <div>
+      <img src="images/_MG_0812.JPG" id="intro" width="30%"> 
+      </div>
+      <hr>
+      </center>
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: -8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 15px;
+    margin: 50px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width:600px) {
+    .column {
+        width: 50%;
+    }
+}
+</style>
+
+<div class="row">
+  <div class="column">
+    <h2>Column</h2>
+    <p>words</p>
+  </div>
+  <div class="column">
+    <h2>Column</h2>
+    <p>words</p>
+  </div>
+  <div class="column">
+    <h2>Column</h2>
+    <p>words</p>
+  </div>
+</div>
+      
+    </body>
+</html>
