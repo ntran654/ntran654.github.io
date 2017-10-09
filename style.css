@@ -37,6 +37,7 @@ img {
     padding: 0;
     overflow: hidden;
     background-color: #FFF;
+    font-family: "centurygothic";
 }
 #nav li {
     float:left;
